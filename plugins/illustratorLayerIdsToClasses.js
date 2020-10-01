@@ -42,7 +42,7 @@ function findLayerName(element) {
 function findExistingClasses(element) {
     return element.attr('class') || {
         name: 'class',
-        value: undefined,
+        value: element.class.add(''),
         prefix: '',
         local: ''
     };
